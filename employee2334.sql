@@ -1,0 +1,11 @@
+   select*from Employees;
+   select job_id, count( * )from Employees group by job_id ;
+   select max (salary) from Employees;
+   select min (salary) from Employees;
+   select sum (salary) from Employees;
+   select avg (salary) from Employees;
+   select count (salary)from Employees;
+   select count (*) from Employees group by job_id having count(*)>=4;
+   select count (*) from Employees group by job_id having count(*)>=4 order by count (*);
+   select department_id ,count (*) 'No of Emp' from Employees group by department_id;
+   select count (department_id) from Employees;
